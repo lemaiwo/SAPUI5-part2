@@ -1,0 +1,53 @@
+<template data-controller-name="firstsapui5project.SecondView">
+	<div data-sap-ui-type="sap.m.Page" data-title="Second View">
+		<div data-sap-ui-aggregation="content">
+			<div data-sap-ui-type="sap.ui.commons.form.Form" id="myForm">
+				<div data-sap-ui-aggregation="layout" data-sap-ui-type="sap.ui.commons.form.ResponsiveLayout"id="myLayout"></div>
+				<div data-sap-ui-aggregation="formContainers">
+					<div data-sap-ui-type="sap.ui.commons.form.FormContainer" id="myInfoContainer" data-title="Option 1">
+						<div data-sap-ui-aggregation="formElements">
+						<!-- input field -->
+							<div data-sap-ui-type="sap.ui.commons.form.FormElement">
+								<div data-sap-ui-aggregation="layoutData" data-sap-ui-type="sap.ui.commons.layout.ResponsiveFlowLayoutData" data-linebreak="true" data-margin="false"></div>
+								<div data-sap-ui-aggregation="label" data-sap-ui-type="sap.m.Label" id="inputLabel" data-text="Input">
+									<div data-sap-ui-aggregation="layoutData" data-sap-ui-type="sap.ui.commons.layout.ResponsiveFlowLayoutData" data-weight= "2"></div>
+								</div>
+								<div data-sap-ui-aggregation="fields" data-sap-ui-type="sap.m.Text" id="inputValue" data-text="{model>/input}">
+									<div data-sap-ui-aggregation="layoutData" data-sap-ui-type="sap.ui.commons.layout.ResponsiveFlowLayoutData" data-weight= "10"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div data-sap-ui-aggregation="formContainers">
+					<div data-sap-ui-type="sap.ui.commons.form.FormContainer" id="myInfoContainer2" data-title="Option 2">
+						<div data-sap-ui-aggregation="formElements">
+						<!-- input field -->
+							<div data-sap-ui-type="sap.ui.commons.form.FormElement">
+								<div data-sap-ui-aggregation="layoutData" data-sap-ui-type="sap.ui.commons.layout.ResponsiveFlowLayoutData" data-linebreak="true" data-margin="false"></div>
+								<div data-sap-ui-aggregation="label" data-sap-ui-type="sap.m.Label" id="inputLabel2" data-text="Input">
+									<div data-sap-ui-aggregation="layoutData" data-sap-ui-type="sap.ui.commons.layout.ResponsiveFlowLayoutData" data-weight= "2"></div>
+								</div>
+								<div data-sap-ui-aggregation="fields" data-sap-ui-type="sap.m.Text" id="inputValue2" data-text="{/input}">
+									<div data-sap-ui-aggregation="layoutData" data-sap-ui-type="sap.ui.commons.layout.ResponsiveFlowLayoutData" data-weight= "10"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-sap-ui-aggregation="customHeader">
+			<div data-sap-ui-type="sap.m.Bar">
+				<div data-sap-ui-aggregation="contentLeft">
+					<div data-sap-ui-type="sap.m.Button" data-icon="sap-icon://nav-back" data-tap="back">
+					</div>
+				</div>
+				<div data-sap-ui-aggregation="contentMiddle">
+					<div data-sap-ui-type="sap.m.Label" data-text="Second View">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
